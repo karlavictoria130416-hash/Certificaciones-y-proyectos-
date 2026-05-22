@@ -1,0 +1,60 @@
+<ion-content class="fondo">
+
+  <!-- Barra superior -->
+  <div class="barra">
+
+    <div class="monedas">
+      💰 {{monedasService.monedas}}
+    </div>
+
+    <div class="titulo">
+      Mi Mascota 🍓
+    </div>
+
+    <div class="cerrar" (click)="cerrar()">
+      X
+    </div>
+
+  </div>
+
+  <!-- Mascota -->
+  <div class="mascota">
+    <img src="assets/fresita.png">
+  </div>
+
+  <!-- Estadísticas -->
+  <div class="stats">
+
+    <p>🍔 Hambre: {{hambre * 100 | number:'1.0-0'}}%</p>
+    <ion-progress-bar [value]="hambre"></ion-progress-bar>
+
+    <p>⚡ Energía: {{energia * 100 | number:'1.0-0'}}%</p>
+    <ion-progress-bar [value]="energia"></ion-progress-bar>
+
+    <p>📚 Estudio: {{estudio * 100 | number:'1.0-0'}}%</p>
+    <ion-progress-bar [value]="estudio"></ion-progress-bar>
+
+  </div>
+
+  <!-- Botones -->
+  <div class="acciones">
+
+    <ion-button expand="block" (click)="alimentar()">
+      Dar comida 🍔
+    </ion-button>
+
+    <ion-button expand="block" (click)="dormir()">
+      Dormir 😴
+    </ion-button>
+
+    <ion-button expand="block" (click)="estudiar()">
+      Estudiar 📚
+    </ion-button>
+
+    <ion-button expand="block" (click)="comprarComida()">
+      Comprar comida 🍔 (10)
+    </ion-button>
+
+  </div>
+
+</ion-content>

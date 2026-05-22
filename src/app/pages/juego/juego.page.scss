@@ -1,0 +1,61 @@
+.fondo{
+  --background:#c97a8a;
+  text-align:center;
+}
+
+/* barra superior */
+
+.barra{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  background:#d8899a;
+  color:white;
+  font-weight:bold;
+}
+
+.cerrar{
+  font-size:22px;
+  cursor:pointer;
+  padding:5px 10px;
+  border-radius:8px;
+}
+
+.cerrar:hover{
+  background:rgba(255,255,255,0.2);
+}
+
+.titulo{
+  color:white;
+  margin-top:10px;
+}
+
+.monedas{
+  color:white;
+  font-size:20px;
+}
+
+.juego{
+  background:white;
+  margin:40px;
+  padding:30px;
+  border-radius:20px;
+}
+
+ion-button{
+  --background:#c97a8a;
+}
+
+/* area del juego */
+
+.area-juego{
+  position:relative;
+  height:400px;
+}
+
+.fresa-juego{
+  position:absolute;
+  width:60px;
+  cursor:pointer;
+}

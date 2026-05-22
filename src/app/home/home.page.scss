@@ -1,0 +1,77 @@
+.fondo{
+  --background: #c97a8a;
+  text-align: center;
+}
+
+.barra-superior{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+  color:white;
+}
+
+.menu{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.fresa img{
+  width:150px;
+  margin-top:80px;
+}
+
+.flecha{
+  position:absolute;
+  top:50%;
+  font-size:30px;
+  color:white;
+}
+
+.izquierda{
+  left:10px;
+}
+
+.derecha{
+  right:10px;
+}
+
+.comida{
+  position:absolute;
+  bottom:40px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+
+.comida img{
+  width:80px;
+}
+
+.icono{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.comida-item{
+  position: relative;
+}
+
+.contador{
+
+  position:absolute;
+  top:-8px;
+  right:-8px;
+
+  background:red;
+  color:white;
+
+  font-size:14px;
+  padding:4px 7px;
+
+  border-radius:50%;
+
+}
+

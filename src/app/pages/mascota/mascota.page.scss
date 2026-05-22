@@ -1,0 +1,112 @@
+/* barra superior */
+
+.barra{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:12px 20px;
+
+  background:#d8899a;
+
+  color:white;
+
+  font-weight:bold;
+
+}
+
+/* boton cerrar */
+
+.cerrar{
+
+  font-size:22px;
+
+  cursor:pointer;
+
+  padding:5px 10px;
+
+  border-radius:8px;
+
+  transition:0.2s;
+
+}
+
+/* efecto cuando pasas el mouse */
+
+.cerrar:hover{
+
+  background:rgba(255,255,255,0.2);
+
+}
+
+/* fondo */
+
+.fondo{
+  --background: #c97a8a;
+  text-align: center;
+  padding: 20px;
+}
+
+/* titulo */
+
+.titulo{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* mascota */
+
+.mascota img{
+  width: 180px;
+  margin: 20px 0;
+  animation: flotar 2s infinite ease-in-out;
+}
+
+/* estadísticas */
+
+.stats{
+  margin: 20px;
+}
+
+/* botones */
+
+.acciones ion-button{
+  margin: 8px;
+}
+
+/* barras de progreso */
+
+ion-progress-bar{
+  --progress-background: #c6405b;
+  --background: #c499a3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* botones estilo */
+
+ion-button{
+  --background: #9e1a34;
+  --background-hover: #9e1a34;
+  --background-activated: #9e1a34;
+  --border-radius: 10px;
+}
+
+/* animación mascota */
+
+@keyframes flotar{
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}

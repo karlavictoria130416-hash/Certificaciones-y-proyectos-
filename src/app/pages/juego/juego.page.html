@@ -1,0 +1,80 @@
+<ion-content class="fondo">
+
+<!-- barra superior -->
+
+<div class="barra">
+
+  <div class="monedas">
+    💰 {{monedasService.monedas}}
+  </div>
+
+  <div class="titulo">
+    Juegos 🎮
+  </div>
+
+  <div class="cerrar" (click)="cerrar()">
+    ✖
+  </div>
+
+</div>
+
+<!-- elegir juego -->
+
+<div *ngIf="juegoActivo==''">
+
+<ion-button (click)="elegirJuego('contador')">
+Juego rápido ⚡
+</ion-button>
+
+<ion-button (click)="elegirJuego('fresas')">
+Atrapar fresas 🍓
+</ion-button>
+
+</div>
+
+<!-- juego 1 -->
+
+<div *ngIf="juegoActivo=='contador'" class="juego">
+
+<p *ngIf="!jugando">
+Presiona jugar para ganar monedas
+</p>
+
+<p *ngIf="jugando">
+Tiempo restante: {{tiempo}}
+</p>
+
+<ion-button (click)="iniciarjuego()" *ngIf="!jugando">
+Jugar 🎮
+</ion-button>
+
+</div>
+
+<!-- juego 2 -->
+
+<div *ngIf="juegoActivo=='fresas'">
+
+<ion-button (click)="iniciarFresas()">
+Iniciar 🍓
+</ion-button>
+
+<p>
+Tiempo: {{tiempoFresas}}
+</p>
+
+<div class="area-juego">
+
+<img
+*ngFor="let fresa of fresas; let i=index"
+src="assets/fresita.png"
+class="fresa-juego"
+(click)="atraparFresa(i)"
+[style.left.%]="fresa.x"
+[style.top.%]="fresa.y"
+>
+
+</div>
+
+</div>
+
+</ion-content>

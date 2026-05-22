@@ -1,0 +1,125 @@
+.fondo{
+  --background:#c97a8a;
+}
+
+
+/* barra superior */
+
+.barra{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:13px 20px;
+
+  background:#d8899a;
+
+  color:white;
+
+  font-weight:bold;
+
+}
+
+
+/* titulo */
+
+.titulo{
+
+  text-align:center;
+  color:white;
+  margin:20px;
+  font-size:28px;
+
+}
+
+
+/* monedas */
+
+.monedas{
+
+  font-size:18px;
+
+}
+
+
+/* contenedor tienda */
+
+.tienda{
+
+  display:grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap:20px;
+
+  padding:20px;
+
+}
+
+
+/* tarjeta de producto */
+
+.item{
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:12px;
+
+  text-align:center;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  box-shadow:0 4px 8px rgba(0,0,0,0.15);
+
+  transition: transform 0.2s;
+
+}
+
+
+/* animacion cuando se toca */
+
+.item:hover{
+
+  transform:scale(1.05);
+
+}
+
+
+/* imagen comida */
+
+.item img{
+
+  width:60px;
+
+  margin-bottom:5px;
+
+}
+
+
+/* nombre producto */
+
+.item p{
+
+  margin:3px;
+
+  font-size:14px;
+
+}
+
+
+/* boton comprar */
+
+.item ion-button{
+
+  margin-top:5px;
+
+}
