@@ -1,0 +1,39 @@
+<ion-content class="fondo">
+
+  <!-- barra superior -->
+  <div class="barra">
+
+    <div class="titulo">
+      Tienda 🛒
+    </div>
+
+    <div class="monedas">
+      💰 {{ monedas }}
+    </div>
+
+  </div>
+
+  <div class="tienda">
+
+    <div class="item" *ngFor="let comida of comidas">
+
+      <img [src]="comida.img">
+
+      <p>{{ comida.nombre }}</p>
+
+      <p>💰 {{ comida.precio }}</p>
+
+      <ion-button size="small" (click)="comprar(comida)">
+        COMPRAR
+      </ion-button>
+
+    </div>
+
+  </div>
+
+  <ion-button expand="block" (click)="cerrar()">
+    CERRAR
+  </ion-button>
+
+</ion-content>
+  

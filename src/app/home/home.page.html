@@ -1,0 +1,61 @@
+<ion-content class="fondo">
+
+  <div class="barra-superior">
+
+    <span routerLink="/tienda" class="icono">🛒</span>
+
+    <span>💰 {{monedasService.monedas}}</span>
+
+    <span>{{hora}}</span>
+
+    <span routerLink="/ajustes" class="icono">⚙️</span>
+
+  </div>
+
+  <div class="menu">
+
+    <ion-button size="small" routerLink="/juego">
+      🎮
+    </ion-button>
+
+    <ion-button size="small" routerLink="/mascota">
+      🧸
+    </ion-button>
+
+    <ion-button size="small" routerLink="/estudio">
+      📅
+    </ion-button>
+
+  </div>
+
+   
+
+  <div class="fresa">
+    <img src="assets/fresita.png">
+  </div>
+
+ 
+
+  <div class="comida">
+
+    <ion-button size="small" (click)="comidaAnterior()">
+      ◀
+    </ion-button>
+
+    <div class="comida-item" (click)="alimentarMascota()">
+
+      <img [src]="monedasService.inventario[comidaIndex]?.img">
+
+      <div class="contador">
+        x{{monedasService.inventario[comidaIndex]?.cantidad}}
+      </div>
+
+    </div>
+
+    <ion-button size="small" (click)="comidaSiguiente()">
+      ▶
+    </ion-button>
+
+  </div>
+
+</ion-content>

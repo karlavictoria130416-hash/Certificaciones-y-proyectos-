@@ -1,0 +1,64 @@
+<ion-content class="fondo">
+
+<!-- barra superior -->
+
+<div class="barra">
+
+  <div class="titulo-barra">
+    Estudio 📚
+  </div>
+
+  <div class="cerrar" (click)="cerrar()">
+    ✖
+  </div>
+
+</div>
+
+<h2 class="titulo">Tiempo de estudio</h2>
+
+<!-- editar minutos -->
+
+<div class="config">
+
+<p>Minutos de estudio</p>
+
+<ion-input
+type="number"
+[(ngModel)]="tiempoInput"
+placeholder="Ejemplo: 25"
+min="1"
+max="120">
+</ion-input>
+
+</div>
+
+<!-- temporizador -->
+
+<div class="temporizador">
+
+{{minutos}}:
+{{segundos < 10 ? '0'+segundos : segundos}}
+
+</div>
+
+<!-- fresita -->
+
+<div class="fresa">
+<img src="assets/fresita.png">
+</div>
+
+<!-- botones -->
+
+<div class="botones">
+
+<ion-button (click)="iniciar()">
+Iniciar ▶
+</ion-button>
+
+<ion-button (click)="parar()">
+Parar ⏹
+</ion-button>
+
+</div>
+
+</ion-content>

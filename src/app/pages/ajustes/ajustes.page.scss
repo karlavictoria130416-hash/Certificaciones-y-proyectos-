@@ -1,0 +1,66 @@
+.fondo{
+  --background:#c97a8a;
+  text-align:center;
+}
+
+/* barra superior */
+
+.barra{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  background:#d8899a;
+  color:white;
+  font-weight:bold;
+}
+
+.titulo-barra{
+  font-size:20px;
+}
+
+.cerrar{
+  font-size:22px;
+  cursor:pointer;
+  padding:5px 10px;
+  border-radius:8px;
+}
+
+.cerrar:hover{
+  background:rgba(255,255,255,0.2);
+}
+
+/* titulo */
+
+.titulo{
+  color:white;
+  margin-top:30px;
+}
+
+/* panel ajustes */
+
+.panel{
+  background:white;
+  margin:30px;
+  padding:25px;
+  border-radius:20px;
+}
+
+/* opciones */
+
+.opcion{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:20px 0;
+}
+
+/* boton reset */
+
+.reset{
+  margin-top:20px;
+}
+
+ion-button{
+  --background:#b86476;
+}

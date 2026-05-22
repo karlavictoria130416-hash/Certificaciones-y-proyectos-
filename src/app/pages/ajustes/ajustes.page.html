@@ -1,0 +1,53 @@
+<ion-content class="fondo">
+
+<!-- barra superior -->
+
+<div class="barra">
+
+  <div class="titulo-barra">
+    Ajustes ⚙
+  </div>
+
+  <div class="cerrar" (click)="cerrar()">
+    ✖
+  </div>
+
+</div>
+
+<h2 class="titulo">Configuración</h2>
+
+<div class="panel">
+
+  <!-- sonido -->
+
+  <div class="opcion">
+
+    <p>Sonido 🔊</p>
+
+    <ion-toggle [(ngModel)]="sonido"></ion-toggle>
+
+  </div>
+
+  <!-- modo oscuro -->
+
+  <div class="opcion">
+
+    <p>Modo oscuro 🌙</p>
+
+    <ion-toggle [(ngModel)]="modoOscuro"></ion-toggle>
+
+  </div>
+
+</div>
+
+<!-- reiniciar progreso -->
+
+<div class="reset">
+
+  <ion-button (click)="reiniciar()">
+    Reiniciar progreso 🔄
+  </ion-button>
+
+</div>
+
+</ion-content>
